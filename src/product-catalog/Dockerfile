@@ -12,7 +12,7 @@ FROM alpine AS release
 
 WORKDIR /usr/src/app
 
-COPY --from=builder product-catalog ./
+COPY --from=builder /usr/src/app/product-catalog ./
 
 COPY ./products ./products
 
