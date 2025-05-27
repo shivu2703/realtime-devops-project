@@ -8,7 +8,7 @@ RUN go mod download
 
 RUN go build -o product-catalog ./ 
 
-FROM alpine AS release
+FROM alpine AS release  
 
 WORKDIR /usr/src/app
 
